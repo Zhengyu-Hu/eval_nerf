@@ -123,7 +123,7 @@ if psnr_values:
     
     # 保存PSNR结果到文件
     psnr_file = os.path.join(inference_path, 'psnr_results.txt')
-    with open(psnr_file, 'w') as f:
+    with open(psnr_file, 'w', encoding='utf-8') as f:
         f.write(f"平均PSNR: {mean_psnr:.2f} dB\n")
         f.write(f"最小PSNR: {min_psnr:.2f} dB\n")
         f.write(f"最大PSNR: {max_psnr:.2f} dB\n")
